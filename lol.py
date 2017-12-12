@@ -3,7 +3,9 @@ print("Kes sa oled?")
 input("Tere, minu nimi on")
 import math
 
-a,b,c = input("Sisesta arvu väärtused a, b and c: ")
+a = input("Sisesta a")
+b = input("sisesta b")
+c = input("Sisesta c")
 a = int(a)
 b = int(b)
 c = int(c)
