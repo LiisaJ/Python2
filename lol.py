@@ -1,17 +1,23 @@
 print("Tere!")
 print("Kes sa oled?")
 input("Tere, minu nimi on")
-import cmath
-# a = float(input('Sisesta a: '))
-# b = float(input('Sisesta b: '))
-# c = float(input('Sisesta c: '))
+import math
 
-d = (b**2) - (4*a*c)
+a,b,c = input("Sisesta arvu väärtused a, b and c: ")
+a = int(a)
+b = int(b)
+c = int(c)
+d = pow(b,2)-4*a*c # discriminant
 
-sol1 = (-b-cmath.sqrt(d))/(2*a)
-sol2 = (-b+cmath.sqrt(d))/(2*a)
-
-print("Lahendid on('{0} ja {1}' .format(sol1,sol2))
+if d < 0:
+    print ("This equation has no real solution")
+elif d == 0:
+    x = (-b+math.sqrt(b**2-4*a*c))/2*a
+    print ("This equation has one solutions: "), x
+else:
+    x1 = (-b+math.sqrt(b**2-4*a*c))/2*a
+    x2 = (-b-math.sqrt(b**2-4*a*c))/2*a
+    print ("This equation has two solutions: ", x1, " and"), x2
       
       
 
