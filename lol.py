@@ -8,16 +8,15 @@ a = int(a)
 b = int(b)
 c = int(c)
 d = pow(b,2)-4*a*c # discriminant
-
+print(d)
 if d < 0:
-    print ("This equation has no real solution")
-elif d == 0:
-    x = (-b+math.sqrt(b**2-4*a*c))/2*a
-    print ("This equation has one solutions: "), x
+    print ("Lahendid puuduvad")
 else:
-    x1 = (-b+math.sqrt(b**2-4*a*c))/2*a
-    x2 = (-b-math.sqrt(b**2-4*a*c))/2*a
-    print ("This equation has two solutions: ", x1, " and"), x2
+    x1 = round((-b+math.sqrt(b**2-4*a*c))/2*a)
+    x2 =round((-b-math.sqrt(b**2-4*a*c))/2*a)
+    print("Kaks lahendit: ", x1, " and", x2)
+    
+    
       
       
 
