@@ -30,6 +30,7 @@ begin_fill()
 circle(90)
 end_fill()
 left(180)
+https://courses.cs.ut.ee/2017/progmaa/fall/Main/PARTVIIFunktsioonKilpkonn
 
 
                         
